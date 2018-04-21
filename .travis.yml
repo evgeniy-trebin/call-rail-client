@@ -1,0 +1,28 @@
+addons:
+  code_climate:
+    repo_token:
+      secure: 'PMRt5P9RE9/TlPZnf4Gb7+sztNumgnHFP+ol0koBpq+DNXiEzSpgY5nEIMD4FMNeLll9DhiRrswkMAtckms4vlMAWtbvbwsFLecFd99vd3XPVMpHklpSGY5A6uCRzKiMM43Fbkle/wSwkwr98kTOZeotA9l35iewLSwfYoPMRrpQW4ZPUGG6RntHt75KRm9IuwyFDDhzfiNKgq2ykV4foWA5pnzkl2f45fSE39FsAsLjIloUnOmmQ0UAJoUUG6bP3Ita9onfVyMeQ9bW2hPuBjMrC/5clEDew8UkbS+7LS8ncL9pKYfarKOjNXSs32Ppv8794exgzUuzuR0ukP4hm3uO6/QXpMXRjdr6JwOlvW9yXjMDc7ujf5XnMcVyruhoxzSXA3QBowyqMfdDweuIuIt4itLIGASrwZAWmNxKLpkC4nEcbA/OwI8Wbxe9kKGDU/wkipE6ADxRJ/4GH4UebNG2tlJjKBNhx82u7eGS/qscAgt50fTHCjEgsl06Mv1k3vFn6z1sOLwKW7u1VnYD/WegNcvEamHaNCjhYSh973GWzlrPKgFsR/CRx/btMIARv+Pnfi/mR32yudcyoTi5K5b0Rb/z1r3LYdcVMlryuEGwdaJZ/e/vzfeY9v0iRdiDReg1928OLcnNT9QFpKLwt2Uz4Kailqa//Fo7urW3wAI='
+after_success:
+  - bundle exec codeclimate-test-reporter
+before_install:
+  - gem update bundler rake
+branches:
+  only:
+    - master
+language: ruby
+matrix:
+  allow_failures:
+    - rvm: ruby-head
+rvm:
+  - '2.0'
+  - '2.1'
+  - '2.2'
+  - '2.3.3'
+  - '2.4.0'
+  - '2.4.1'
+  - '2.5.0'
+  - '2.5.1'
+  - ruby-head
+script:
+  - bundle exec rubocop
+  - bundle exec rspec
