@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.callrail.com/v2/a/<CALL_RAIL_ACCOUNT_ID>.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - utf-8
+      User-Agent:
+      - rest-client/2.0.2 (linux-gnu x86_64) ruby/2.5.1p57
+      Authorization:
+      - Token token=<CALL_RAIL_API_KEY>
+      Content-Type:
+      - application/json
+      Host:
+      - api.callrail.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.12.2
+      Date:
+      - Sat, 21 Apr 2018 19:45:21 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Rate-Limit-Hourly-Allowed:
+      - '250'
+      X-Rate-Limit-Hourly-Used:
+      - '9'
+      X-Rate-Limit-Daily-Allowed:
+      - '2500'
+      X-Rate-Limit-Daily-Used:
+      - '9'
+      Etag:
+      - W/"e7730a8eb04fc14f83f64e058e34963d"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - c13cfb97-a2d2-44e1-9023-f55324905dd7
+      X-Runtime:
+      - '0.052537'
+      Vary:
+      - Origin
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: UTF-8
+      string: '{"id":<CALL_RAIL_ACCOUNT_ID>,"name":"Test","outbound_recording_enabled":false}'
+    http_version: 
+  recorded_at: Sat, 21 Apr 2018 19:45:21 GMT
+recorded_with: VCR 4.0.0
