@@ -2,6 +2,7 @@
 
 $LOAD_PATH.push File.expand_path('lib', __dir__)
 
+# rubocop:disable Metrics/BlockLength
 Gem::Specification.new do |spec|
   spec.name    = 'call-rail-client'
   spec.version = '0.0.0'
@@ -17,7 +18,8 @@ Gem::Specification.new do |spec|
   spec.test_files = spec.files.grep(/^spec/)
 
   spec.add_development_dependency 'activesupport', '~> 5.2'
-  spec.add_development_dependency 'rest-client', '~> 2.0'
   spec.add_development_dependency 'bundler', '~> 1.7'
   spec.add_development_dependency 'rake', '~> 10.3'
+  spec.add_development_dependency 'rest-client', '~> 2.0'
 end
+# rubocop:enable Metrics/BlockLength

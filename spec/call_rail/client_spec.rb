@@ -9,4 +9,10 @@ describe CallRail::Client do
 
     it { is_expected.to be_a(CallRail::Api::Accounts) }
   end
+
+  describe '.trackers' do
+    subject { client.trackers }
+
+    it { is_expected.to be_a(CallRail::Api::Trackers) }
+  end
 end
