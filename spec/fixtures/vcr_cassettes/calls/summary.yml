@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.callrail.com/v2/a/<CALL_RAIL_ACCOUNT_ID>/calls/summary.json?group_by=source
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - utf-8
+      User-Agent:
+      - rest-client/2.0.2 (linux-gnu x86_64) ruby/2.5.1p57
+      Authorization:
+      - Token token=<CALL_RAIL_API_KEY>
+      Content-Type:
+      - application/json
+      Host:
+      - api.callrail.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.12.2
+      Date:
+      - Sun, 22 Apr 2018 18:40:41 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Rate-Limit-Hourly-Allowed:
+      - '250'
+      X-Rate-Limit-Hourly-Used:
+      - '1'
+      X-Rate-Limit-Daily-Allowed:
+      - '2500'
+      X-Rate-Limit-Daily-Used:
+      - '5'
+      Etag:
+      - W/"83ed94ed92ffd3e25393ecbbc667eba6"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 6edb859f-7cb3-42c8-9262-16f4390c0ed4
+      X-Runtime:
+      - '0.066803'
+      Vary:
+      - Origin
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: UTF-8
+      string: '{"start_date":"2018-03-23T00:00:00-0400","end_date":"2018-04-22T23:59:59-0400","time_zone":"Eastern
+        Time (US \u0026 Canada)","total_results":{"total_calls":2},"grouped_by":"source","grouped_results":[{"key":"Ofline
+        number","total_calls":2}]}'
+    http_version: 
+  recorded_at: Sun, 22 Apr 2018 18:40:41 GMT
+recorded_with: VCR 4.0.0

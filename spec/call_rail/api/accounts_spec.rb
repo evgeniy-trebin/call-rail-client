@@ -6,7 +6,7 @@ describe CallRail::Api::Accounts do
 
   describe '.list' do
     let(:accounts) { described_class.new(client_without_account_id) }
-    let(:vcr_cassette) { 'accounts_list' }
+    let(:vcr_cassette) { 'accounts/list' }
 
     subject { accounts.list }
 
@@ -15,7 +15,7 @@ describe CallRail::Api::Accounts do
 
   describe '.info' do
     let(:accounts) { described_class.new(client) }
-    let(:vcr_cassette) { 'accounts_info' }
+    let(:vcr_cassette) { 'accounts/info' }
 
     subject { accounts.info }
 

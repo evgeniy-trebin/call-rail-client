@@ -1,0 +1,70 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.callrail.com/v2/a/<CALL_RAIL_ACCOUNT_ID>/calls/589800616/recording.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - utf-8
+      User-Agent:
+      - rest-client/2.0.2 (linux-gnu x86_64) ruby/2.5.1p57
+      Authorization:
+      - Token token=<CALL_RAIL_API_KEY>
+      Content-Type:
+      - application/json
+      Host:
+      - api.callrail.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.12.2
+      Date:
+      - Sun, 22 Apr 2018 18:47:24 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Rate-Limit-Hourly-Allowed:
+      - '250'
+      X-Rate-Limit-Hourly-Used:
+      - '3'
+      X-Rate-Limit-Daily-Allowed:
+      - '2500'
+      X-Rate-Limit-Daily-Used:
+      - '7'
+      Etag:
+      - W/"bda68633bdaa569a93b5f7b28dde9f44"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 73a30e2f-3a32-45c2-b9f6-b4291b1c1a80
+      X-Runtime:
+      - '0.122493'
+      Vary:
+      - Origin
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: UTF-8
+      string: '{"url":"https://calltrk-production.s3.amazonaws.com/calls/recordings/150/164/994/RE35ad415d0951d695ad9db9dc303b0ac6.mp3?response-content-disposition=attachment\u0026response-content-type=audio%2Fmpeg\u0026X-Amz-Algorithm=AWS4-HMAC-SHA256\u0026X-Amz-Credential=AKIAIF6HQ3RNGMKER2ZQ%2F20180422%2Fus-east-1%2Fs3%2Faws4_request\u0026X-Amz-Date=20180422T184724Z\u0026X-Amz-Expires=86400\u0026X-Amz-SignedHeaders=host\u0026X-Amz-Signature=eacce6f89067720f35a87c796519d94fc6aedbb4c877c21f28f5ba84b1cab128"}'
+    http_version: 
+  recorded_at: Sun, 22 Apr 2018 18:47:24 GMT
+recorded_with: VCR 4.0.0

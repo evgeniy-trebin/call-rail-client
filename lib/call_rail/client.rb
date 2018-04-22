@@ -10,7 +10,7 @@ module CallRail
       @account_id = account_id
     end
 
-    %w[accounts trackers].each do |endpoint|
+    %w[accounts calls trackers].each do |endpoint|
       define_method endpoint do
         if instance_variable_defined?("@#{endpoint}")
           instance_variable_get("@#{endpoint}")

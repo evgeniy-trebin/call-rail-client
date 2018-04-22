@@ -15,4 +15,10 @@ describe CallRail::Client do
 
     it { is_expected.to be_a(CallRail::Api::Trackers) }
   end
+
+  describe '.calls' do
+    subject { client.calls }
+
+    it { is_expected.to be_a(CallRail::Api::Calls) }
+  end
 end

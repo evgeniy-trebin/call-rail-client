@@ -8,7 +8,7 @@ describe CallRail::Api::Trackers do
   around(:each) { |example| VCR.use_cassette(vcr_cassette, &example) }
 
   describe '.list' do
-    let(:vcr_cassette) { 'trackers_list' }
+    let(:vcr_cassette) { 'trackers/list' }
 
     subject { trackers.list }
 
@@ -20,7 +20,7 @@ describe CallRail::Api::Trackers do
     end
 
     context 'pagination' do
-      let(:vcr_cassette) { 'trackers_list_pagination' }
+      let(:vcr_cassette) { 'trackers/list_pagination' }
 
       subject { trackers.list(params: { page: 2, per_page: 250 }) }
 
@@ -35,7 +35,7 @@ describe CallRail::Api::Trackers do
 
   describe '.info' do
     let(:tracker_id) { 677996186 }
-    let(:vcr_cassette) { 'trackers_info' }
+    let(:vcr_cassette) { 'trackers/info' }
 
     subject { trackers.info(tracker_id) }
 

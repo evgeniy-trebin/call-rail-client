@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.callrail.com/v2/a/<CALL_RAIL_ACCOUNT_ID>/calls/timeseries.json?end_date=2018-04-22&fields=missed_calls,answered_calls,first_time_callers,average_duration,formatted_average_duration,leads&start_date=2018-03-23
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - utf-8
+      User-Agent:
+      - rest-client/2.0.2 (linux-gnu x86_64) ruby/2.5.1p57
+      Authorization:
+      - Token token=<CALL_RAIL_API_KEY>
+      Content-Type:
+      - application/json
+      Host:
+      - api.callrail.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.12.2
+      Date:
+      - Sun, 22 Apr 2018 18:43:31 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Rate-Limit-Hourly-Allowed:
+      - '250'
+      X-Rate-Limit-Hourly-Used:
+      - '2'
+      X-Rate-Limit-Daily-Allowed:
+      - '2500'
+      X-Rate-Limit-Daily-Used:
+      - '6'
+      Etag:
+      - W/"749f08291fba1c9a8117a9735f881d35"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 2ca94f0c-097e-4380-ab1a-5cb1d9c9bca4
+      X-Runtime:
+      - '0.075356'
+      Vary:
+      - Origin
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: UTF-8
+      string: '{"start_date":"2018-03-23T00:00:00-0400","end_date":"2018-04-22T23:59:59-0400","time_zone":"Eastern
+        Time (US \u0026 Canada)","total_results":{"total_calls":2,"missed_calls":0,"answered_calls":2,"first_time_callers":1,"average_duration":28,"formatted_average_duration":"28s","leads":0},"data":[{"key":"2018-03-23","date":"2018-03-23","total_calls":0,"missed_calls":0,"answered_calls":0,"first_time_callers":0,"average_duration":0,"formatted_average_duration":"0s","leads":0},{"key":"2018-03-24","date":"2018-03-24","total_calls":0,"missed_calls":0,"answered_calls":0,"first_time_callers":0,"average_duration":0,"formatted_average_duration":"0s","leads":0},{"key":"2018-03-25","date":"2018-03-25","total_calls":0,"missed_calls":0,"answered_calls":0,"first_time_callers":0,"average_duration":0,"formatted_average_duration":"0s","leads":0},{"key":"2018-03-26","date":"2018-03-26","total_calls":0,"missed_calls":0,"answered_calls":0,"first_time_callers":0,"average_duration":0,"formatted_average_duration":"0s","leads":0},{"key":"2018-03-27","date":"2018-03-27","total_calls":0,"missed_calls":0,"answered_calls":0,"first_time_callers":0,"average_duration":0,"formatted_average_duration":"0s","leads":0},{"key":"2018-03-28","date":"2018-03-28","total_calls":0,"missed_calls":0,"answered_calls":0,"first_time_callers":0,"average_duration":0,"formatted_average_duration":"0s","leads":0},{"key":"2018-03-29","date":"2018-03-29","total_calls":0,"missed_calls":0,"answered_calls":0,"first_time_callers":0,"average_duration":0,"formatted_average_duration":"0s","leads":0},{"key":"2018-03-30","date":"2018-03-30","total_calls":0,"missed_calls":0,"answered_calls":0,"first_time_callers":0,"average_duration":0,"formatted_average_duration":"0s","leads":0},{"key":"2018-03-31","date":"2018-03-31","total_calls":0,"missed_calls":0,"answered_calls":0,"first_time_callers":0,"average_duration":0,"formatted_average_duration":"0s","leads":0},{"key":"2018-04-01","date":"2018-04-01","total_calls":0,"missed_calls":0,"answered_calls":0,"first_time_callers":0,"average_duration":0,"formatted_average_duration":"0s","leads":0},{"key":"2018-04-02","date":"2018-04-02","total_calls":0,"missed_calls":0,"answered_calls":0,"first_time_callers":0,"average_duration":0,"formatted_average_duration":"0s","leads":0},{"key":"2018-04-03","date":"2018-04-03","total_calls":0,"missed_calls":0,"answered_calls":0,"first_time_callers":0,"average_duration":0,"formatted_average_duration":"0s","leads":0},{"key":"2018-04-04","date":"2018-04-04","total_calls":0,"missed_calls":0,"answered_calls":0,"first_time_callers":0,"average_duration":0,"formatted_average_duration":"0s","leads":0},{"key":"2018-04-05","date":"2018-04-05","total_calls":0,"missed_calls":0,"answered_calls":0,"first_time_callers":0,"average_duration":0,"formatted_average_duration":"0s","leads":0},{"key":"2018-04-06","date":"2018-04-06","total_calls":0,"missed_calls":0,"answered_calls":0,"first_time_callers":0,"average_duration":0,"formatted_average_duration":"0s","leads":0},{"key":"2018-04-07","date":"2018-04-07","total_calls":0,"missed_calls":0,"answered_calls":0,"first_time_callers":0,"average_duration":0,"formatted_average_duration":"0s","leads":0},{"key":"2018-04-08","date":"2018-04-08","total_calls":0,"missed_calls":0,"answered_calls":0,"first_time_callers":0,"average_duration":0,"formatted_average_duration":"0s","leads":0},{"key":"2018-04-09","date":"2018-04-09","total_calls":0,"missed_calls":0,"answered_calls":0,"first_time_callers":0,"average_duration":0,"formatted_average_duration":"0s","leads":0},{"key":"2018-04-10","date":"2018-04-10","total_calls":0,"missed_calls":0,"answered_calls":0,"first_time_callers":0,"average_duration":0,"formatted_average_duration":"0s","leads":0},{"key":"2018-04-11","date":"2018-04-11","total_calls":0,"missed_calls":0,"answered_calls":0,"first_time_callers":0,"average_duration":0,"formatted_average_duration":"0s","leads":0},{"key":"2018-04-12","date":"2018-04-12","total_calls":2,"missed_calls":0,"answered_calls":2,"first_time_callers":1,"average_duration":28,"formatted_average_duration":"28s","leads":0},{"key":"2018-04-13","date":"2018-04-13","total_calls":0,"missed_calls":0,"answered_calls":0,"first_time_callers":0,"average_duration":0,"formatted_average_duration":"0s","leads":0},{"key":"2018-04-14","date":"2018-04-14","total_calls":0,"missed_calls":0,"answered_calls":0,"first_time_callers":0,"average_duration":0,"formatted_average_duration":"0s","leads":0},{"key":"2018-04-15","date":"2018-04-15","total_calls":0,"missed_calls":0,"answered_calls":0,"first_time_callers":0,"average_duration":0,"formatted_average_duration":"0s","leads":0},{"key":"2018-04-16","date":"2018-04-16","total_calls":0,"missed_calls":0,"answered_calls":0,"first_time_callers":0,"average_duration":0,"formatted_average_duration":"0s","leads":0},{"key":"2018-04-17","date":"2018-04-17","total_calls":0,"missed_calls":0,"answered_calls":0,"first_time_callers":0,"average_duration":0,"formatted_average_duration":"0s","leads":0},{"key":"2018-04-18","date":"2018-04-18","total_calls":0,"missed_calls":0,"answered_calls":0,"first_time_callers":0,"average_duration":0,"formatted_average_duration":"0s","leads":0},{"key":"2018-04-19","date":"2018-04-19","total_calls":0,"missed_calls":0,"answered_calls":0,"first_time_callers":0,"average_duration":0,"formatted_average_duration":"0s","leads":0},{"key":"2018-04-20","date":"2018-04-20","total_calls":0,"missed_calls":0,"answered_calls":0,"first_time_callers":0,"average_duration":0,"formatted_average_duration":"0s","leads":0},{"key":"2018-04-21","date":"2018-04-21","total_calls":0,"missed_calls":0,"answered_calls":0,"first_time_callers":0,"average_duration":0,"formatted_average_duration":"0s","leads":0},{"key":"2018-04-22","date":"2018-04-22","total_calls":0,"missed_calls":0,"answered_calls":0,"first_time_callers":0,"average_duration":0,"formatted_average_duration":"0s","leads":0}]}'
+    http_version: 
+  recorded_at: Sun, 22 Apr 2018 18:43:31 GMT
+recorded_with: VCR 4.0.0

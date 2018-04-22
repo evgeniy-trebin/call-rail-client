@@ -1,0 +1,71 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.callrail.com/v2/a/<CALL_RAIL_ACCOUNT_ID>/calls/589800616.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - utf-8
+      User-Agent:
+      - rest-client/2.0.2 (linux-gnu x86_64) ruby/2.5.1p57
+      Authorization:
+      - Token token=<CALL_RAIL_API_KEY>
+      Content-Type:
+      - application/json
+      Host:
+      - api.callrail.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.12.2
+      Date:
+      - Sun, 22 Apr 2018 17:42:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Status:
+      - 200 OK
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Rate-Limit-Hourly-Allowed:
+      - '250'
+      X-Rate-Limit-Hourly-Used:
+      - '4'
+      X-Rate-Limit-Daily-Allowed:
+      - '2500'
+      X-Rate-Limit-Daily-Used:
+      - '4'
+      Etag:
+      - W/"8f4471f4b18e9d0ef39333b09659a1f7"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 0c89d7ed-903b-4868-beaf-d3ae2318eea8
+      X-Runtime:
+      - '0.062060'
+      Vary:
+      - Origin
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: UTF-8
+      string: '{"answered":true,"business_phone_number":"+19287738225","customer_city":"Columbia","customer_country":"US","customer_name":"COLUMBIA,
+        MO","customer_phone_number":"+15732346321","customer_state":"MO","direction":"inbound","duration":33,"id":589800616,"recording":"https://api.callrail.com/v2/a/<CALL_RAIL_ACCOUNT_ID>/calls/589800616/recording","recording_duration":18,"recording_player":"https://app.callrail.com/calls/589800616/recording?access_key=f46ec4a2845e942aeb6f","start_time":"2018-04-12T10:44:53.236-04:00","tracking_phone_number":"+19284401365","voicemail":false}'
+    http_version: 
+  recorded_at: Sun, 22 Apr 2018 17:42:56 GMT
+recorded_with: VCR 4.0.0
